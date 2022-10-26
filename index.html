@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+            <h1 class="text-center">Gasto Semanal</h1>
+    </header>
+    <section class="contenido-principal">
+        <div class="row">
+            <div class="col ">
+                <div class="contenido primario">
+                    <h2 class="text-center">Añade tus gastos aqui</h2>
+                        <form id="agregar-gasto" action="#">
+                            <div class="form-group">
+                                <label for="gasto">Gasto:</label>
+                                <input type="text" class="form-control" id="gasto" placeholder="Nombre Gasto">
+                            </div>
+                            <div class="form-group">
+                                <label for="cantidad">Cantidad:</label>
+                                <input type="text" class="form-control" id="cantidad" placeholder="Cantidad en $">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Agregar</button>
+                        </form>
+
+                </div> <!--.contenido-->
+            </div> <!--.col-->
+
+            <div class="col">
+                <div class="contenido secundario">
+
+                    <h2 class="text-center">Listado</h2>
+
+                    <div id="gastos">
+                        <ul class="list-group"></ul>
+                    </div>
+                    <div id="presupuesto" class="presupuesto">
+                        <div class="alert alert-primary">
+                            <p>Presupuesto: $ <span id="total"></span> </p>
+                        </div>
+                        <div class="restante alert alert-success">
+                            <p>Restante: $ <span id="restante"></span></p>
+                        </div>
+                    </div> <!--.presupuesto-->
+                </div> <!--.contenido-->
+            </div><!--.col-->
+        </div> <!--.row-->
+    </section>
+</div>
+  <!-- Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
