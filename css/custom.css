@@ -1,0 +1,110 @@
+body{
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+}
+@media (min-width: 1440px) {
+     .app{
+        height: 90vh;
+     }
+}
+.container, .contenido-principal, .form-procentaje{
+    display: grid;
+}
+.container{
+    max-width: 840px;
+    grid-template-rows: 15%  85%;
+    --bs-gutter-x: unset;
+    height: 100vh;
+}
+@media (min-width: 1440px) {
+    .container{
+       grid-template-rows: 25% 85%;
+       height: 58vh;
+    }
+}
+.contenido-principal{
+    grid-template-rows: 60% 40%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+@media (min-width: 1440px) {
+     .contenido-principal{
+        grid-template-rows: unset;
+        grid-template-columns: 1fr 1fr;
+        border-radius: 20px;
+        padding: 1.5rem 0;
+     }
+}
+.secundario, .primario{
+    width: 85%;
+}
+.secundario{
+    background-color: hsl(183, 100%, 15%);
+}
+@media (min-width: 1440px) {
+     .secundario{
+        height: 100%;
+        display: grid;
+        grid-template-rows: 25% 25% 50%;
+     }
+}
+h2{
+    letter-spacing: 10px;
+}
+@media (min-width: 1440px) {
+     h2{
+        font-size: 1.5rem;
+     }
+}
+
+.gastos-persona, .gastos-totales{
+    color: #fff;
+}
+span{
+    color: hsl(172, 67%, 45%);
+}
+button{
+    background-color: hsl(172, 67%, 45%);
+}
+.person, label{
+    color: hsl(184, 14%, 56%);
+}
+.form-control{
+    background-position : 1rem center;
+    background-image: url('../images/icon-dollar.svg');
+    background-repeat: no-repeat;
+    background-color: hsl(189, 41%, 97%);
+}
+.form-people{
+    background-image: url('../images/icon-person.svg');
+}
+.form-procentaje{
+    margin-top: 12px;
+    grid-template-columns: 47% 47%;
+    grid-template-rows: repeat(3,1fr);
+    gap: 1rem;
+}
+@media (min-width: 1440px) {
+     .form-procentaje{
+        grid-template-columns: 32% 32% 32%;
+        grid-template-rows: repeat(2,1fr);
+     }
+}
+.active{
+    background-color: hsl(172, 67%, 45%);
+    color: #fff;
+}
+.alerta{
+    color: rgba(236, 58, 58, 0.836);
+}
+.b-alerta{
+    border: 1px solid rgba(236, 58, 58, 0.836);
+}
+.b-success{
+    border-color: 1px solid green;
+}
+.b-desactive{
+    background-color: hsl(183, 81%, 21%);
+    color: hsl(184, 14%, 56%);
+}
